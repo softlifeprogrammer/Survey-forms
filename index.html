@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking your time to help conduct this survey</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label> Name:<input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label> Email:<input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label> Number:<input id="number" type="number" placeholder="Enter your number" min="10" max="200"/></label>
+      </fieldset>
+      <fieldset>
+        <legend> Please fill in this label</legend>
+         <label id="name-label" required> Name label:<input></input></label>
+        <label id="email-label" required> Email label:<input></input></label>
+        <label id="number-label" required> Number label:<input></input></label>
+      </fieldset>
+      <fieldset>
+        <label> How did you hear about us?
+        <select id="dropdown">
+          <option>(select option)</option>
+          <option>freeCodeCamp Youtube</option>
+          <option>freeCodeCamp Instagram</option>
+          <option>freeCodeCamp Facebook</option>
+          <option>freeCodeCamp News</option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <legend> Account type (required)</legend>
+        <label for="personal-account"><input name="group1" type="radio" value="1" class="inline" checked></input> Personal</label>
+        <label for="business-account"><input name="group1" type="radio" value="2" class="inline"></input> Business</label>
+        <label for="public-account"><input name="group2" type="radio" value="3" class="inline"></input> Public</label>
+        <label for="private-account"><input name="group2" type="radio" value="4" class="inline"></input> Private</label>
+      </fieldset>
+      <fieldset>
+        <legend> What would you like to improve in Ghana?
+        <label><input type="checkbox" class="inline" value="5"></input> Agriculture</label>
+        <label><input type="checkbox" class="inline" value="6"></input> Transportation</label>
+        <label><input type="checkbox" class="inline" value="7"></input> Health</label>
+        <label><input type="checkbox" class="inline" value="8"></input> Economy</label>
+        </legend>
+        </fieldset>
+        <fieldset>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding with dark theme..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" />
+  </form>
+  </body>
+  </html>
